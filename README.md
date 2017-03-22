@@ -1,5 +1,8 @@
 # XKCDAngular2
 
+Version 1:
+<img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1.png" />
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
 
 ## Development server
