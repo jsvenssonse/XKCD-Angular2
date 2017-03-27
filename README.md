@@ -1,6 +1,11 @@
 # XKCDAngular2
+Newest Comic:
+<img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Latest.png" />
 
-Version 1:
+Random Comic:
+<img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_random.png" />
+
+First Version JSONP:
 <img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1.png" />
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
