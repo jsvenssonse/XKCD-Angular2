@@ -6,16 +6,24 @@ import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import {UIRouterModule} from "ui-router-ng2";
 
+
 import {JsonpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
-import { ComicService } from '../services/comic.service';
-//import { RoutesComponent } from './routes.component';
 
-import { oneState, secState, uiRouterConfigFn } from './routes.component';
-import {ComicComponent} from './comic.component';
+//This files are for JSONP
+//import { ComicService } from '../services/comic.service';
+//import {ComicComponent} from './comic.component';
 
-let INITIAL_STATES =  [ oneState, secState ];
+
+import { uiRouterConfigFn, stateone, statetwo} from './routes';
+
+//Stuff for testinge
+import { ComicService } from './comic/comic.service';
+import {ComicComponent} from './comic/comic.component';
+
+
+let INITIAL_STATES =  [ stateone, statetwo ];
 let INITIAL_COMPONENTS =  [ ComicComponent, AppComponent];
 
 @NgModule({
@@ -32,7 +40,7 @@ let INITIAL_COMPONENTS =  [ ComicComponent, AppComponent];
       states: INITIAL_STATES,
       useHash: true,
       config: uiRouterConfigFn
-    })
+    }),
   ],
   providers: [ComicService],
   bootstrap: [AppComponent],

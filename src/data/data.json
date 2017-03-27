@@ -1,0 +1,53 @@
+{
+month: "7",
+num: 614,
+link: "",
+year: "2009",
+news: "",
+safe_title: "Woodpecker",
+transcript: "[[A man with a beret and a woman are standing on a boardwalk, leaning on a handrail.]] Man: A woodpecker! <<Pop pop pop>> Woman: Yup. [[The woodpecker is banging its head against a tree.]] Woman: He hatched about this time last year. <<Pop pop pop pop>> [[The woman walks away. The man is still standing at the handrail.]] Man: ... woodpecker? Man: It's your birthday! Man: Did you know? Man: Did... did nobody tell you? [[The man stands, looking.]] [[The man walks away.]] [[There is a tree.]] [[The man approaches the tree with a present in a box, tied up with ribbon.]] [[The man sets the present down at the base of the tree and looks up.]] [[The man walks away.]] [[The present is sitting at the bottom of the tree.]] [[The woodpecker looks down at the present.]] [[The woodpecker sits on the present.]] [[The woodpecker pulls on the ribbon tying the present closed.]] ((full width panel)) [[The woodpecker is flying, with an electric drill dangling from its feet, held by the cord.]] {{Title text: If you don't have an extension cord I can get that too. Because we're friends! Right?}}",
+alt: "If you don't have an extension cord I can get that too. Because we're friends! Right?",
+img: "https://imgs.xkcd.com/comics/woodpecker.png",
+title: "Woodpecker",
+day: "24"
+}
+{
+month: "7",
+num: 123,
+link: "",
+year: "2006",
+news: "",
+safe_title: "Centrifugal Force",
+transcript: "[[ Bond is tied to a giant centrifuge ]] Hat Guy: Do you like my centrifuge, Mister Bond? When I throw the lever, you will feel centrifugal force crush every bone in your body. Mr. Bond: You mean centripetal force. There's no such thing as centrifugal force. Hat Guy: A laughable claim, Mister Bond, perpetuated by overzealous teachers of science. Simply construct Newton's laws into a rotating system and you will see a centrifugal force term appear as plain as day. Mr. Bond: Come now, do you really expect me to do coordinate substitution in my head while strapped to a centrifuge? Hat Guy: No, Mr. Bond. I expect you to die. {{ alt: You spin me right round, baby, right round, in a manner depriving me of an inertial reference frame. Baby. }}",
+alt: "You spin me right round, baby, right round, in a manner depriving me of an inertial reference frame. Baby.",
+img: "https://imgs.xkcd.com/comics/centrifugal_force.png",
+title: "Centrifugal Force",
+day: "3"
+}
+
+{
+month: "12",
+num: 200,
+link: "",
+year: "2006",
+news: "",
+safe_title: "Bill Nye",
+transcript: "[[A restaurant. A mother and two children sit at one table; a man in a white lab coat sits in another.]] Title: THE TRIBULATIONS of BILL NYE Mother: Hey, kids, see how the ice cracks and pops in your water? I wonder what causes that... Mother: *AHEM* I said, I wonder what -- Bill Nye: Know what? Maybe I just wanna enjoy my goddamn meal. {{alt text: You could at least not wear the lab coat everywhere, dude.}}",
+alt: "You could at least not wear the lab coat everywhere, dude.",
+img: "https://imgs.xkcd.com/comics/bill_nye.png",
+title: "Bill Nye",
+day: "22"
+}
+{
+month: "8",
+num: 300,
+link: "",
+year: "2007",
+news: "",
+safe_title: "Facebook",
+transcript: "{{Title: Mildly sleazy uses of Facebook, part 14:}} {{subheading: Looking up someone's profile before introducing yourself so you know which of your favorite bands to mention}} Boy: Favorite bands? Hmm... Boy: Maybe Regina Spektor or the Polyphonic Spree. Girl: Whoa, those are two of my favorites, too! Girl: Clearly, we should have sex. Boy: Okay! My favorite position is the retrograde wheelbarrow. Girl: [[arms in the air]] Ohmygod, mine too! {{alt-text: 'Here, I'll put my number in your cell pho -- wait, why is it already here?'}}",
+alt: "'Here, I'll put my number in your cell pho -- wait, why is it already here?'",
+img: "https://imgs.xkcd.com/comics/facebook.png",
+title: "Facebook",
+day: "8"
+}

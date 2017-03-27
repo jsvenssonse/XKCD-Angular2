@@ -25,4 +25,5 @@ export class ComicService {
 		return this._jsonp.get(url)
 		.map((data) => data.json())
 	}
+
 }

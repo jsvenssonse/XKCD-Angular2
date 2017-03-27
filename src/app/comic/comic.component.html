@@ -1,0 +1,19 @@
+<div class="comic">
+	<md-toolbar color="primary">
+      <div class="left">
+      	<button md-button uiSref="comic"><img src="assets/chevron-left.png" alt="" /></button>
+      </div>
+      <div class="center"><h3>{{ comic.title }}</h3></div>
+      <div class="right">
+      	<button md-button [mdMenuTriggerFor]="menu"><img src="assets/dots-vertical.png" alt="" /></button>
+      	<md-menu #menu="mdMenu">
+      	<button md-menu-item uiSref="random" >New random Comic</button>
+      	</md-menu>
+      </div>
+    </md-toolbar>
+    <md-card>
+        <md-grid-list cols="1">
+            <img md-media-md src="{{comic.img}}" />
+        </md-grid-list>
+    </md-card> 
+</div>
