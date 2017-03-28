@@ -16,23 +16,28 @@ import {ComicComponent} from './comic/comic.component';
 import { ModuleWithProviders } from '@angular/core';
 
 import {Transition} from "ui-router-ng2";
-
-
-export const stateone = {
+    
+	//let comp = new ComicComponent;
+	//let start = comp.showspinner;
+ export const stateone = {
 	name: 'comic',
-	url: '/comic',
+	url: '/comic/:id',
 	component: ComicComponent,
 	resolve: [
 	  	{ 
 		    token: 'comic',
-		    deps: [ComicService], 
-		    resolveFn: (comicSvc) => comicSvc.getComic()
+		    deps: [Transition, ComicService], 
+		    resolveFn: (trans, comicSvc) => comicSvc.getComic( trans.params().id)
 	  	}
 	]
 };
+
+
+
 export const statetwo = {
+
 	name: 'random',
-	url: '/random',
+	url: '/random/:id',
 	component: ComicComponent,
 	resolve: [
 	  	{ 
@@ -43,10 +48,12 @@ export const statetwo = {
 	]
 };
 
+
 /** UIRouter Config  */
 export function uiRouterConfigFn(router: UIRouter, injector: Injector) {
   //const peopleService = injector.get(PeopleService);
   const comicService = injector.get(ComicService);
+
   // Plunker embeds can time out.  
   // Pre-load the people list at startup.
 

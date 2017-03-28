@@ -10,3 +10,20 @@
 	width: 20%;
 	text-align: left;
 }
+
+.hidden{
+	display: none;
+	
+}
+.show{
+	display: block;
+
+}
+#spinner{
+	margin: 0 auto;
+	margin-bottom: -50px;
+}
+
+#img{
+	margin: 0 auto;
+}

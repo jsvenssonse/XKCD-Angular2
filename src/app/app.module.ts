@@ -18,7 +18,6 @@ import { AppComponent } from './app.component';
 
 import { uiRouterConfigFn, stateone, statetwo} from './routes';
 
-//Stuff for testinge
 import { ComicService } from './comic/comic.service';
 import {ComicComponent} from './comic/comic.component';
 
@@ -40,10 +39,10 @@ let INITIAL_COMPONENTS =  [ ComicComponent, AppComponent];
       states: INITIAL_STATES,
       useHash: true,
       config: uiRouterConfigFn
-    }),
+    })
   ],
   providers: [ComicService],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
 

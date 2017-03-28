@@ -1,4 +1,4 @@
-import { Injectable, Inject,Input } from '@angular/core';
+import { Injectable, Inject,Input, OnInit } from '@angular/core';
 
 import { Http, Jsonp, Response } from '@angular/http';
 import { Headers, RequestOptions } from '@angular/http';
@@ -10,35 +10,46 @@ import 'rxjs/add/observable/throw';
 import 'rxjs/add/operator/toPromise';
 import { Observable } from 'rxjs/Observable';
 
-@Injectable()
-export class ComicService {   
-	constructor(@Inject(Http) public http: Http) {  }
-  numbers = [];
-  cache = null;
 
-@Input() stateParams;
-  getComic() {
-    return this.cache = this.cache || this.http.get('http://xkcd.com/info.0.json')
-        .map(resp =>  resp.json()).toPromise();
+import {UIRouterModule} from 'ui-router-ng2';
+
+@Injectable()
+export class ComicService implements OnInit {   
+	constructor(@Inject(Http) public http: Http) {  }
+    @Input() stateParams;
+    cache = null;
+    array = [];
+
+    ngOnInit(){
         
-  }
-  getComicBack(number) {
-  	 this.numbers.push(number)
-  	 console.log("längden " + this.numbers.length);
-  	 let counter = (this.numbers.length - 1);
-	console.log('nr minus 1 = ' + counter);
-	console.log([this.numbers[counter]]);
-	return this.http.get('http://xkcd.com/' +this.numbers[counter] +'/info.0.json')
-        .map(resp =>  resp.json()).toPromise();
-  }
-  getComicRandom() {
-  	
-  	let number = Math.floor(Math.random()*1815);
-  	console.log("this nr new random" + number);
-  	this.getComicBack(number);
-    return this.http.get('http://xkcd.com/' +number +'/info.0.json')
-        .map(resp =>  resp.json()).toPromise();
+    }
+
+    getComic() {
+        let length  = this.array.length - 2;
+        let id = this.array[length];
         
-  }
+        console.log(length);
+        
+        if(length >= 0) {
+            return this.http.get('http://xkcd.com/' + id +'/info.0.json')
+                .map(resp =>  resp.json()).toPromise();
+        }else{
+            return this.http.get('http://xkcd.com/info.0.json')
+                .map(resp =>  resp.json()).toPromise();
+        }
+    }
+    getComicTest() {
+            return this.http.get('http://xkcd.com/info.0.json')
+                .map(data =>  data.json());
+    }
+    getComicRandom() {
+      	let number = Math.floor(Math.random()*1815);
+      	console.log("this nr new random" + number);
+        this.array.push(number);
+        
+        return this.http.get('http://xkcd.com/' +number +'/info.0.json')
+            .map(resp =>  resp.json()).toPromise();
+    }
+
 
 }
