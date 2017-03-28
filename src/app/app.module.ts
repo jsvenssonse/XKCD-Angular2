@@ -15,19 +15,18 @@ import { AppComponent } from './app.component';
 //import { ComicService } from '../services/comic.service';
 //import {ComicComponent} from './comic.component';
 
-
-import { uiRouterConfigFn, stateone, statetwo} from './routes';
+import { RoutesComponent } from './routes';
 
 import { ComicService } from './comic/comic.service';
-import {ComicComponent} from './comic/comic.component';
+import { ComicComponent } from './comic/comic.component';
 
-
-let INITIAL_STATES =  [ stateone, statetwo ];
+let comp = new RoutesComponent;
+let INITIAL_STATES =  [ comp.stateone, comp.statetwo ];
 let INITIAL_COMPONENTS =  [ ComicComponent, AppComponent];
 
 @NgModule({
   declarations: [
-    INITIAL_COMPONENTS,
+    INITIAL_COMPONENTS
   ],
   imports: [
     BrowserModule,
@@ -38,7 +37,7 @@ let INITIAL_COMPONENTS =  [ ComicComponent, AppComponent];
     UIRouterModule.forRoot({
       states: INITIAL_STATES,
       useHash: true,
-      config: uiRouterConfigFn
+      config: comp.uiRouterConfigFn
     })
   ],
   providers: [ComicService],

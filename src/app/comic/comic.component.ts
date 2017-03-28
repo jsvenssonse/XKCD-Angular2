@@ -21,7 +21,7 @@ export class ComicComponent implements OnInit {
     getComic(){
         this.showspinner();
        return this.comicService.getComicTest()
-            .subscribe((data) => {
+            .subscribe((resp) => {
                 console.log('API working') 
                 this.hidespinner();
             })
