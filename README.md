@@ -1,7 +1,7 @@
 # XKCDAngular2
 
 Version 1:
-<img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1.png" />
+<img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1_1.png" />
 <img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1_2.png" />
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.2.
