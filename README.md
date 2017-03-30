@@ -1,5 +1,7 @@
 # XKCDAngular2
 
+##This is Made for testing UI-routes, JSONP
+
 Version 1:
 <img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1_1.png" />
 <img src="http://sejs.se/portfolio/pic/xkcd-Angular2/Angular_XKCD_Version1_2.png" />
